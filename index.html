@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Formulaire</title>
+</head>
+
+<body class="text-center px-3 px-md--5">
+    <header class="mt-3">
+        <section class="row mb-3">
+            <div class="col-3 text-start">
+                <button id="prev-btn" type="button" class="btn btn-outline-primary px-1 py-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                    </svg> Back
+                </button>
+            </div>
+            <div class="col-9 fw-bold position-absolute start-50 translate-middle mt-3 fs-4">
+                TruAligner
+            </div>
+        </section>
+        <section class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50"
+                class="progress-bar progress-bar-animated bg-primary rounded rounded-pill" role="progressbar"
+                style="width: 10%"></div>
+        </section>
+    </header>
+    <main>
+        <section id="qbox-container">
+            <form action="" class="mx-auto needs-validation" id="form-wrapper" method="post" name="form-wrapper"
+                novalidate>
+                <div id="steps-container">
+                    <section class="step mt-auto">
+                        <p class="fw-bold fs-3">
+                            Welcome to TruAligner!
+                        </p>
+                        <p class="fw-lighter">
+                            Take our 30-second survey to learn if you're a candidate!
+                        </p>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">
+                            Have you worn braces or invisible aligners in the past?
+                        </h4>
+                        <input type="radio" class="btn-check hidden" id="btn-check1" name="response1"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check1">Yes</label>
+
+                        <input type="radio" class="btn-check" id="btn-check2" name="response1" autocomplete="off" />
+                        <label class="response" for="btn-check2">No</label>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">What would you like to fix about your teeth?</h4>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check3" name="reponse2"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check3">Spacing Issue</label>
+
+                        <input type="radio" class="btn-check" id="btn-check4" name="reponse2" autocomplete="off" />
+                        <label class="response" for="btn-check4">Crowding issue</label>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check5" name="reponse2"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check5">A bite problem, (overbite, underbite, crossbite)</label>
+
+                        <input type="radio" class="btn-check" id="btn-check6" name="reponse2" autocomplete="off" />
+                        <label class="response" for="btn-check6">Generally straighter teeth</label>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">How soon do you want to get started?</h4>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check7" name="response3"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check7">Right Away</label>
+
+                        <input type="radio" class="btn-check" id="btn-check8" name="response3" autocomplete="off" />
+                        <label class="response" for="btn-check8">A few Weeks</label>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check9" name="response3"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check9">A few months</label>
+
+                        <input type="radio" class="btn-check" id="btn-check10" name="response3" autocomplete="off" />
+                        <label class="response" for="btn-check10">Not sure</label>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">How did you hear about us?</h4>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check11" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check11">Mailer</label>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check12" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check12">Podcast</label>
+
+                        <input type="radio" class="btn-check" id="btn-check13" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check13">My dentist</label>
+
+                        <input type="radio" class="btn-check" id="btn-check14" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check14">Social media</label>
+
+                        <input type="radio" class="btn-check" id="btn-check15" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check15">Friends</label>
+
+                        <input type="radio" class="btn-check" id="btn-check16" name="response4" autocomplete="off" />
+                        <label class="response" for="btn-check16">Influencer</label>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">
+                            Is there anything else you want to know about Trualigner?
+                        </h4>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check17" name="response5" autocomplete="off" />
+                        <label class="response" for="btn-check17">Cost Break Down</label>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check18" name="response5" autocomplete="off" />
+                        <label class="response" for="btn-check18">How is it different from others</label>
+
+                        <input type="radio" class="btn-check" id="btn-check19" name="response5" autocomplete="off" />
+                        <label class="response" for="btn-check19">What's the grantee</label>
+
+                        <input type="radio" class="btn-check" id="btn-check20" name="response5" autocomplete="off" />
+                        <label class="response" for="btn-check20">How TruAlignera</label>
+                    </section>
+                    <section class="step">
+                        <h4 class="my-5">How old are you?</h4>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check21" name="response6" autocomplete="off" />
+                        <label class="response" for="btn-check21">13-16</label>
+
+                        <input type="radio" class="btn-check" id="btn-check22" name="response6" autocomplete="off" />
+                        <label class="response" for="btn-check22">16-18</label>
+
+                        <input type="radio" class="btn-check hidden" id="btn-check23" name="response6"
+                            autocomplete="off" />
+                        <label class="response" for="btn-check23">18-25</label>
+
+                        <input type="radio" class="btn-check" id="btn-check24" name="response6" autocomplete="off" />
+                        <label class="response" for="btn-check24">26-34</label>
+
+                        <input type="radio" class="btn-check" id="btn-check25" name="response6" autocomplete="off" />
+                        <label class="response" for="btn-check25">35-46</label>
+
+                        <input type="radio" class="btn-check" id="btn-check26" name="response6" autocomplete="off" />
+                        <label class="response" for="btn-check26">47+</label>
+                    </section>
+                    <section class="step final-step">
+                        <div class="mt-3"><img src="./image_check.svg" alt="image coche"></div>
+                        <div>
+                            <h4 class="fw-bold">Assessment complete.</h4>
+                            <h5 class="fw-lighter fs-5">We just need a little more information so that we can help you
+                                with your next step.</h5>
+                        </div>
+                        <div class="last-part">
+                            <div class="mb-3 text-start">
+                                <label for="firstname" class="form-label">First Name</label>
+                                <input type="text" name="firstname" id="firstname" class="form-control" required />
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="lastname" class="form-label">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" class="form-control" required />
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" required />
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" id="email" class="form-control" required />
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="zip" class="form-label">Zip</label>
+                                <input type="text" name="zip" id="zip" class="form-control" required />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" id="submit-btn" disabled class="btn btn-primary px-5 py-3 w-75 rounded-pill submit-btn">See
+                                    results</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="fw-lighter fs-6">By clicking “See results" you agree to receive offers and updates
+                                from TruAligner. You can unsubscribe at any time.</p>
+                        </div>
+                    </section>
+                    <section class="step response mt-auto">
+                        <p class="fw-bold mx-auto mt-auto">
+                            THANK YOU!
+                        </p>
+                    </section>
+                </div>
+            </form>
+        </section>
+        <section id="q-box__buttons" class="position-absolute bottom-0 start-50 translate-middle">
+            <button id="next-btn" class="btn btn-lg btn-primary rounded-pill px-5 py-3 w-100">Continue</button>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
